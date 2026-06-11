@@ -10,7 +10,7 @@ st.markdown('So sánh 5 kịch bản chính sách phát triển kinh tế số V
 
 # Load KPI
 try:
-    df_kpi = pd.read_csv('aideom_kpi_summary.csv', index_col=0)
+    df_kpi = pd.read_csv('Data/aideom_kpi_summary.csv', index_col=0)
     st.success('✅ Đã tải KPI từ aideom_kpi_summary.csv')
 except:
     st.error('❌ Chưa có file KPI — hãy chạy cell bài 12 trong notebook trước')
@@ -46,7 +46,7 @@ with tab1:
     st.info(f'🏆 Vùng ưu tiên triển khai AI đầu tiên: **{top_vung}**')
     # Dữ liệu 6 vùng với tọa độ trung tâm
     # Tính lại TOPSIS ngay trong file này
-    df_r = pd.read_csv('vietnam_regions_2024.csv')
+    df_r = pd.read_csv('Data/vietnam_regions_2024.csv')
     criteria_m2   = ['grdp_per_capita_million_VND','fdi_registered_billion_USD',
                     'digital_index_0_100','ai_readiness_0_100',
                     'trained_labor_pct','rd_intensity_pct',

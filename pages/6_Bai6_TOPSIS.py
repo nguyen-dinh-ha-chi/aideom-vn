@@ -8,7 +8,7 @@ st.set_page_config(page_title='Bài 6 — TOPSIS 6 vùng', layout='wide')
 st.title('🏆 Bài 6 — TOPSIS Xếp hạng 6 vùng theo AI Readiness')
 st.markdown('TOPSIS + Entropy weights, bản đồ Digital Index và AI Readiness.')
 
-df_r = pd.read_csv('vietnam_regions_2024.csv')
+df_r = pd.read_csv('Data/vietnam_regions_2024.csv')
 criteria     = ['grdp_per_capita_million_VND','fdi_registered_billion_USD',
                 'digital_index_0_100','ai_readiness_0_100',
                 'trained_labor_pct','rd_intensity_pct',

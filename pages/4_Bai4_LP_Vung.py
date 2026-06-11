@@ -24,7 +24,7 @@ beta_mat     = {
     ('MD', 'I'):1.10,('MD', 'D'):0.85,('MD', 'AI'):0.65,('MD', 'H'):1.25,
 }
 
-df_r  = pd.read_csv('vietnam_regions_2024.csv')
+df_r  = pd.read_csv('Data/vietnam_regions_2024.csv')
 D0    = dict(zip(regions, df_r['digital_index_0_100'].values))
 
 budget   = st.slider('Ngân sách tổng (tỷ VND)', 30000, 70000, 50000, 5000)
