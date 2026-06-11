@@ -8,7 +8,7 @@ st.title('📈 Bài 1 — Hàm sản xuất Cobb-Douglas mở rộng + AI')
 st.markdown('Ước lượng TFP, phân rã tăng trưởng, dự báo GDP 2030.')
 
 # Dữ liệu
-df = pd.read_csv('vietnam_macro_2020_2025.csv')
+df = pd.read_csv('Data/vietnam_macro_2020_2025.csv')
 years = df['year'].values
 Y     = df['GDP_trillion_VND'].values
 D     = df['digital_economy_share_GDP_pct'].values
