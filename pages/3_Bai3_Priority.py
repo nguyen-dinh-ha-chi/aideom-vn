@@ -8,7 +8,7 @@ st.set_page_config(page_title='Bài 3 — Priority 10 ngành', layout='wide')
 st.title('🏭 Bài 3 — Chỉ số ưu tiên ngành Việt Nam 2024')
 st.markdown('Chuẩn hóa min-max, tính Priority score, phân tích độ nhạy trọng số.')
 
-df = pd.read_csv('vietnam_sectors_2024.csv')
+df = pd.read_csv('Data/vietnam_sectors_2024.csv')
 
 cols_good = ['growth_rate_2024_pct','spillover_coef_0_1',
              'export_billion_USD','labor_million','ai_readiness_0_100']
